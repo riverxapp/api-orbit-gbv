@@ -50,15 +50,12 @@ AI MUST preserve visual identity and layout intent.
 ## 4. Global Change Control Rules (STRICT)
 
 ### CSS
-- No CSS edits unless explicitly requested and approved.
-- Vendor CSS edits are forbidden.
+- Full access
 
 ### Images
-- Images are READ-ONLY.
-- Editable only when an image filename or direct image URL is explicitly provided.
+- Full access
 
 ### Sections
-- Sections are IMMUTABLE.
 - Do not add, remove, or reorder sections unless the section is explicitly named and change is approved.
 
 ---

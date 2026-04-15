@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+<!DOCTYPE html><html lang="en" class="scroll-smooth light">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chirag Dodiya | Senior Engineer Resume</title>
@@ -16,61 +16,63 @@
       document.documentElement.classList.add(theme);
     })();
   </script>
-</head>
-
   <style>
-    :root{color-scheme:dark;}
+    :root{color-scheme:light;}
     html{scroll-behavior:smooth;}
-    body{background:
-      radial-gradient(circle at top, rgba(56,189,248,.18), transparent 34%),
-      radial-gradient(circle at right, rgba(99,102,241,.16), transparent 28%),
-      linear-gradient(180deg, #020617 0%, #0f172a 55%, #020617 100%);
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+      radial-gradient(circle at top, rgba(59,130,246,.10), transparent 34%),
+      radial-gradient(circle at right, rgba(99,102,241,.08), transparent 28%),
+      linear-gradient(180deg, #f8fbff 0%, #eef4ff 55%, #f8fafc 100%);
+      color:#0f172a;
     }
     .resume-shell{max-width:1200px;margin:0 auto;padding:24px 16px 56px;}
-    .resume-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(2,6,23,.72);border-bottom:1px solid rgba(148,163,184,.16);}
+    .resume-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(255,255,255,.78);border-bottom:1px solid rgba(148,163,184,.22);}
     .nav-inner{max-width:1200px;margin:0 auto;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
-    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#f8fafc;}
-    .avatar{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#38bdf8,#6366f1);color:white;font-weight:800;box-shadow:0 10px 30px rgba(59,130,246,.35);}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#0f172a;}
+    .avatar{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#38bdf8,#6366f1);color:white;font-weight:800;box-shadow:0 10px 30px rgba(59,130,246,.25);}
     .brand h1{margin:0;font-size:1.05rem;line-height:1.1;}
-    .brand p,.muted{margin:0;color:#94a3b8;font-size:.92rem;}
+    .brand p,.muted{margin:0;color:#475569;font-size:.92rem;}
     .hero{padding:56px 0 28px;display:grid;grid-template-columns:1.3fr .9fr;gap:24px;align-items:stretch;}
-    .panel{background:rgba(15,23,42,.72);border:1px solid rgba(148,163,184,.16);border-radius:28px;box-shadow:0 24px 80px rgba(2,6,23,.45);}
+    .panel{background:rgba(255,255,255,.82);border:1px solid rgba(148,163,184,.20);border-radius:28px;box-shadow:0 24px 80px rgba(15,23,42,.08);}
     .hero-copy{padding:34px;}
-    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.22);color:#7dd3fc;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(59,130,246,.10);border:1px solid rgba(59,130,246,.18);color:#2563eb;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
     .hero h2{font-size:clamp(2.6rem,5vw,4.8rem);line-height:1.02;margin:18px 0 14px;letter-spacing:-.04em;}
-    .gradient{background:linear-gradient(90deg,#f8fafc,#7dd3fc,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent;}
-    .lead{font-size:1.08rem;line-height:1.75;color:#cbd5e1;max-width:62ch;}
+    .gradient{background:linear-gradient(90deg,#0f172a,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent;}
+    .lead{font-size:1.08rem;line-height:1.75;color:#334155;max-width:62ch;}
     .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
-    .chip{padding:9px 14px;border-radius:999px;background:rgba(148,163,184,.10);border:1px solid rgba(148,163,184,.16);color:#e2e8f0;font-size:.88rem;}
+    .chip{padding:9px 14px;border-radius:999px;background:rgba(148,163,184,.12);border:1px solid rgba(148,163,184,.18);color:#0f172a;font-size:.88rem;}
     .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:700;transition:.2s transform,.2s opacity,.2s background;}
-    .btn-primary{background:linear-gradient(90deg,#38bdf8,#6366f1);color:white;box-shadow:0 18px 36px rgba(59,130,246,.28);}
-    .btn-secondary{background:rgba(148,163,184,.10);color:#e2e8f0;border:1px solid rgba(148,163,184,.16);}
+    .btn-primary{background:linear-gradient(90deg,#2563eb,#7c3aed);color:white;box-shadow:0 18px 36px rgba(37,99,235,.22);}
+    .btn-secondary{background:rgba(148,163,184,.12);color:#0f172a;border:1px solid rgba(148,163,184,.18);}
     .btn:hover{transform:translateY(-1px);}
     .side-card{padding:28px;display:flex;flex-direction:column;gap:18px;}
-    .profile-box{padding:24px;border-radius:22px;background:linear-gradient(180deg, rgba(30,41,59,.95), rgba(15,23,42,.92));border:1px solid rgba(148,163,184,.14);}
+    .profile-box{padding:24px;border-radius:22px;background:linear-gradient(180deg, rgba(248,250,252,.96), rgba(241,245,249,.92));border:1px solid rgba(148,163,184,.16);}
     .profile-box h3,.section h3{margin:0 0 12px;font-size:1.25rem;}
     .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;}
-    .info{padding:14px;border-radius:16px;background:rgba(148,163,184,.08);border:1px solid rgba(148,163,184,.12);}
-    .info span{display:block;color:#94a3b8;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px;}
+    .info{padding:14px;border-radius:16px;background:rgba(59,130,246,.06);border:1px solid rgba(148,163,184,.14);}
+    .info span{display:block;color:#64748b;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px;}
     .section{margin-top:22px;padding:28px;}
     .section + .section{margin-top:18px;}
     .section h2{margin:0 0 18px;font-size:1.5rem;letter-spacing:-.02em;}
     .timeline{display:grid;gap:16px;}
-    .item{padding:18px;border-radius:20px;background:rgba(148,163,184,.06);border:1px solid rgba(148,163,184,.12);}
+    .item{padding:18px;border-radius:20px;background:rgba(248,250,252,.86);border:1px solid rgba(148,163,184,.14);}
     .item-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start;}
     .item h4{margin:0;font-size:1.05rem;}
-    .item .org{color:#7dd3fc;font-weight:600;margin-top:4px;}
-    .item ul{margin:12px 0 0;padding-left:18px;color:#cbd5e1;line-height:1.7;}
+    .item .org{color:#2563eb;font-weight:600;margin-top:4px;}
+    .item ul{margin:12px 0 0;padding-left:18px;color:#334155;line-height:1.7;}
     .skills{display:flex;flex-wrap:wrap;gap:10px;}
-    .skill{padding:10px 14px;border-radius:999px;background:rgba(56,189,248,.10);border:1px solid rgba(56,189,248,.18);color:#e0f2fe;font-size:.9rem;}
+    .skill{padding:10px 14px;border-radius:999px;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.14);color:#0f172a;font-size:.9rem;}
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
     .contact-list{display:grid;gap:10px;}
-    .contact-list a{color:#e2e8f0;text-decoration:none;}
-    .footer{padding:18px 0 0;color:#94a3b8;font-size:.92rem;text-align:center;}
+    .contact-list a{color:#0f172a;text-decoration:none;}
+    .footer{padding:18px 0 0;color:#64748b;font-size:.92rem;text-align:center;}
     @media (max-width: 900px){.hero,.grid-2{grid-template-columns:1fr;}.hero-copy,.side-card,.section{padding:22px;}.nav-inner{padding:14px 16px;}}
   </style>
-  <header class="resume-header">
+
+
+  
+  <body><header class="resume-header">
     <div class="nav-inner">
       <a href="#top" class="brand">
         <div class="avatar">CD</div>
@@ -158,5 +160,5 @@
         <div class="item"><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/chirag-dodiya</a></div>
       </div>
     </section>
-    <div class="footer">© <span id="year"></span> Chirag Dodiya. Senior Engineer.</div>
-  </main></html>
+    <div class="footer">© 2026 Chirag Dodiya. Senior Engineer.</div>
+  </main></body></html>
